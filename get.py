@@ -12,15 +12,15 @@ def check():
     try:
         if "objects" in res_json:
             info=res_json["objects"][0]
-            print(info["shortMessage"])
             if info["shortMessage"].find("售罄")!=-1:
                 print("卖完了")
-            sizes_table=info["sizes"]
-            quantity= int(sizes_table["5.5"]["quantity"])
-            print("35.5数量：",quantity)
-            if quantity!=0:
-                import subprocess
-                subprocess.call("D:\PotPlayer\PotPlayerMini.exe D:\PotPlayer\/alarm.mp3")
+            else:
+                sizes_table=info["sizes"]
+                quantity= int(sizes_table["5.5"]["quantity"])
+                print("35.5数量：",quantity)
+                if quantity!=0:
+                    import subprocess
+                    subprocess.call("D:\PotPlayer\PotPlayerMini.exe D:\PotPlayer\/alarm.mp3")
     except Exception:
         print("error!")
 
