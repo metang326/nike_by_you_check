@@ -1,5 +1,5 @@
 # nike_by_you_check
-nike官网专属定制补货提醒
+nike官网专属定制补货提醒，官网一般是早上八点以后开始补货，可在这个时候运行脚本进行蹲守。
 
 代码中蹲守款式为air-force-1-low女款
 https://www.nike.com/cn/u/custom-nike-air-force-1-by-you-10000831/936687443
